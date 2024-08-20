@@ -1,0 +1,35 @@
+body {
+  background-color: black; /* Ensure the background is black */
+  color: white; /* Ensure text color contrasts with the background */
+  margin: 0;
+  font-family: 'Modern Warfare', sans-serif; /* Apply the font to the entire body */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face {
+  font-family: 'Modern Warfare';
+  src: url('../public/font/MODERN WARFARE.ttf' ) format('truetype'); /* Adjust the path based on your actual file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Ensure the entire body's background color is black */
+body {
+  background-color: black;
+  color: white; /* Ensure text color contrasts with the background */
+  margin: 0;
+  font-family: 'Modern Warfare', sans-serif; /* Apply the font to the entire body */
+}
+
+.starting-heading h1 {
+  font-family: 'Modern Warfare', sans-serif; /* Ensure font is applied to the h1 */
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin: 50px 0;
+}

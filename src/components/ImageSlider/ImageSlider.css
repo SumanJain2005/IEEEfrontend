@@ -1,0 +1,64 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px; /* Rounded corners */
+}
+
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px; /* Rounded corners */
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px; /* Make the dot shorter to create a rectangle */
+    width: 20px;  /* Increase the width to create a rectangle */
+    margin: 0 5px;
+    background-color: #00ff00; /* Set the dot color to green */
+    border-radius: 5px; /* Give the corners a slight roundness */
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #007700; /* Darker green for the active dot */
+}

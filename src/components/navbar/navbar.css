@@ -1,0 +1,130 @@
+/* src/components/Navbar/Navbar.css */
+@font-face {
+  font-family: 'ModernWarfare';
+  src: url('./MW.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures the navbar stays above other content */
+  }
+  
+  /* Adjust padding of the content below to prevent overlap */
+  body {
+    padding-top: 60px; /* Adjust based on the height of your navbar */
+  }
+  
+  /* Links styling */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px; /* Add horizontal margin between links */
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Slightly larger font size for better readability */
+    padding: 10px 15px; /* Add padding around the links for a button-like appearance */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect for links */
+  .navbar-links a:hover {
+    color: #00ff00; /* Change to a light green color on hover */
+    background-color: rgba(0, 255, 0, 0.2); /* Light green background on hover */
+    border-radius: 4px; /* Slightly rounded corners on hover */
+  }
+  
+  /* Sign Up button styling */
+  .signup-btn {
+    background-color: #00ff00; /* Fluorescent green */
+    color: black;
+    border: none;
+    padding: 10px 25px; /* Adjust width for capsule shape and better spacing */
+    cursor: pointer;
+    border-radius: 50px; /* Capsule shape */
+    font-size: 16px;
+    font-family: 'ModernWarfare', sans-serif; /* Apply the custom font */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+  
+  /* Hover effect for Sign Up button */
+  .signup-btn:hover {
+    background-color: #00cc00; /* Darker green on hover */
+    color: white; /* Change text color on hover */
+  }
+  
+  /* Mobile menu icon */
+  .navbar-menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navbar-menu-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Position dropdown menu below the navbar */
+      left: 0;
+      background-color: black;
+      width: 100%;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .navbar-menu-icon {
+      display: block;
+      position: absolute;
+      right: 20px; /* Position menu icon to the right */
+      top: 10px; /* Adjust vertical position if needed */
+    }
+  
+    .signup-btn {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    /* Hover effect for dropdown links */
+    .navbar-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px; /* Consistent font size for dropdown links */
+      padding: 10px 15px; /* Add padding for a button-like appearance */
+      transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+    }
+  
+    .navbar-links a:hover {
+      color: #00ff00; /* Change to a light green color on hover */
+      background-color: rgba(0, 255, 0, 0.2); /* Light green background on hover */
+      border-radius: 4px; /* Slightly rounded corners on hover */
+    }
+  }
+  

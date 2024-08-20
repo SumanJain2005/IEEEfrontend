@@ -1,0 +1,94 @@
+/* Existing styles */
+
+.footer-section {
+    background-color: #000; /* Pitch black background */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Fluorescent line */
+.fluorescent-line {
+    width: 80%; /* Adjust width so it doesn't touch the screen edges */
+    height: 3px;
+    background-color: #00ff00; /* Fluorescent green color */
+    margin: 0 auto 20px auto; /* Center the line and add space below it */
+    border-radius: 20px; /* Rounded ends */
+}
+
+.footer-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-logo {
+    max-width: 150px;
+}
+
+/* Hover effect for social media icons */
+.footer-center a {
+    color: white; /* Default color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    margin: 0 10px; /* Add horizontal margin to create gap between icons */
+}
+
+.footer-center a:hover {
+    color: #00ff00; /* Green color on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    text-shadow: 0 0 5px #00ff00;
+}
+
+/* Hover effect for footer links */
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #00ff00; /* Green on hover */
+    text-shadow: 0 0 5px #00ff00; /* Add a glowing effect on hover */
+}
+
+/* Tabular form for footer links on small screens */
+@media (max-width: 768px) {
+    .footer-links {
+        display: block; /* Stack links vertically */
+        margin-top: 0;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.footer-bottom {
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}

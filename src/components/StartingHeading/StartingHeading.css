@@ -1,0 +1,14 @@
+/* src/components/StartingHeading/StartingHeading.css */
+
+.starting-heading {
+    text-align: center;
+    margin: 50px 0; /* Add spacing above and below the heading */
+  }
+  
+  .starting-heading h1 {
+    font-family: 'Modern Warfare', sans-serif; /* Apply the font to the h1 */
+    font-size: 3rem;
+    color: white; /* Ensure text is visible against black background */
+    text-align: center;
+    margin: 50px 0; /* Adjust spacing as needed */
+  }

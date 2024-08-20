@@ -1,0 +1,19 @@
+.starting-section {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    background-color: transparent;
+}
+
+.starting-section h2 {
+    font-family: 'ModernWarfare', sans-serif; /* Match font to navbar */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.starting-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 600px;
+}
